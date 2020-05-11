@@ -31,7 +31,7 @@ for line in f:
      Fileline_list=list(line.split(','))
      FIO.append(list(Fileline_list[1].split() + Fileline_list[2].split()))
 
-     if len(Fileline_list[3])==8 and len(Fileline_list[1])>2 and len(Fileline_list[2])>2:
+     if len(Fileline_list[3])==8 and len(Fileline_list[1])>2 and len(Fileline_list[2])>2 and len(Fileline_list[4])>2:
          Fileline_list.insert(0, listToString(email_gen(FIO)))
          d=open('edit.txt', 'a+')
          d.write(listToString(listToString(Fileline_list)) + '\n')
